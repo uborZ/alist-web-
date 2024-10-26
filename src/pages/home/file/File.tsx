@@ -6,6 +6,7 @@ import { objStore } from "~/store"
 import { Download } from "../previews/download"
 import { OpenWith } from "./open-with"
 import { getPreviews } from "../previews"
+import PdfPreview from "../previews/pdf"
 
 const File = () => {
   const previews = createMemo(() => {

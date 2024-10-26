@@ -89,6 +89,11 @@ const previews: Preview[] = [
     type: ObjType.VIDEO,
     component: lazy(() => import("./video360")),
   },
+  {
+    name: "PDF",
+    exts: ["pdf"],
+    component: lazy(() => import("./pdf")),
+  },
 ]
 
 export const getPreviews = (

@@ -43,3 +43,8 @@ export const generateIframePreview = (scheme: string): Component => {
     return <IframePreview scheme={scheme} />
   }
 }
+
+// Add a scheme for pdf.js in the iframe previews
+const pdfJsScheme = "https://mozilla.github.io/pdf.js/web/viewer.html?file="
+
+export const pdfJsPreview = generateIframePreview(pdfJsScheme)
